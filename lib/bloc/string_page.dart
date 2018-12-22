@@ -33,7 +33,7 @@ class StringPage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text("BLoC"),),
+      appBar: AppBar(title: Text("BLoC in Flutter"),),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(

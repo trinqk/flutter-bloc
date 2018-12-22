@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
 abstract class BlocBase {
-
   /// Anything extending the [BlocBase] must implement the dispose method
   /// Used to dispose the [StreamController]s that are used in [bloc]s
   void dispose();
-
 }
 
 /// [BlocProvider] wraps the [child] with a [bloc], making the bloc available

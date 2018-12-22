@@ -15,6 +15,7 @@ void main() => runApp(App());
 ///
 /// [StringPage] - /bloc/string_page.dart
 /// Stateless Widget that uses [bloc] to display content
+
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
