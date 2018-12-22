@@ -20,7 +20,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BLoC',
+      title: 'BLoC in Flutter',
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
         bloc: StringBloc(),

@@ -16,7 +16,7 @@ class StringPage extends StatelessWidget {
         stream: _stringBloc.outString,
         initialData: "",
         builder: (context, snapshot) {
-          return Text("${snapshot.data}", style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold),);
+          return Text("${snapshot.data}", style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold), textAlign: TextAlign.center,);
         },
       );
     }
