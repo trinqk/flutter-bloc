@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_bloc/bloc-provider/bloc_provider.dart';
-import 'package:flutter_bloc/bloc-provider/string_bloc.dart';
-import 'package:flutter_bloc/bloc-provider/string_page.dart';
+import 'package:flutter_bloc/bloc-using-provider/bloc_provider.dart';
+import 'package:flutter_bloc/bloc-using-provider/string_bloc.dart';
+import 'package:flutter_bloc/bloc-using-provider/string_page.dart';
 
 void main() => runApp(App());
 

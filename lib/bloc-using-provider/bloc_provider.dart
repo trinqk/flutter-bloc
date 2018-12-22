@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 abstract class BlocBase {
+
   /// Anything extending the [BlocBase] must implement the dispose method
   /// Used to dispose the [StreamController]s that are used in [bloc]s
   void dispose();
+
 }
 
 /// [BlocProvider] wraps the [child] with a [bloc], making the bloc available
@@ -23,26 +25,27 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
   }): super(key: key);
 
   /// [bloc] will be made accessible to the child of the [BlocProvider].
-  /// To be considered a viable [bloc], it must extend [BlocBase]
+  /// To be considered a viable [bloc], it must extend [BlocBase].
   final T bloc;
 
-  /// [child] that will have access to the bloc of the [BlocProvider]
-  /// [child] remains untouched and will be returned in the build method
+  /// [child] will have access to the bloc of the [BlocProvider].
+  /// It remains untouched and will be returned in the build method.
   final Widget child;
 
-  /// Method that searches up the widget tree for a [BlocProvider]
-  /// It then returns the [bloc] of the [BlocProvider] that was found
+  /// Method that searches up the widget tree for a [BlocProvider].
+  /// It then returns the [bloc] of the [BlocProvider] that was found.
   static T of<T extends BlocBase>(BuildContext context){
     final type = _typeOf<BlocProvider<T>>();
     BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);
     return provider.bloc;
   }
 
-  /// Method that returns the [Type] of the [Widget]
+  /// Method that returns the [Type] of the [Widget].
   ///
-  /// Allows the [BlocProvider] to be used for all types of [bloc]s
+  /// Allows the [BlocProvider] to be used for all types of [bloc]s.
+  ///
   /// Since we can have different kinds of [bloc]s that will extend [BlocBase],
-  /// the of method, which is located above, needs to know which [BlocProvider] we are looking for
+  /// the of method, which is located above, needs to know which [BlocProvider] we are looking for.
   static Type _typeOf<T>() => T;
 
   @override
