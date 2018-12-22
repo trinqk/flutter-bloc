@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_bloc/bloc-using-provider/bloc_provider.dart';
+import 'package:flutter_bloc/bloc/bloc_provider.dart';
 
 /// ** SAMPLE BLOC **
 /// This is just an example of how to use the [BlocBase] to create a viable [bloc]

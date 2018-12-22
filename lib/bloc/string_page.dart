@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_bloc/bloc-using-provider/bloc_provider.dart';
-import 'package:flutter_bloc/bloc-using-provider/string_bloc.dart';
+import 'package:flutter_bloc/bloc/bloc_provider.dart';
+import 'package:flutter_bloc/bloc/string_bloc.dart';
 
 class StringPage extends StatelessWidget {
   @override
@@ -33,7 +33,7 @@ class StringPage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text("BLoC using Provider"),),
+      appBar: AppBar(title: Text("BLoC"),),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
