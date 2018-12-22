@@ -21,7 +21,7 @@ class StringBloc extends BlocBase {
   /// Note: _inString is private
   ///       outString is public (It needs to be observable)
   ///
-  /// Note: The main job of [_textController] is to display content.
+  /// Note: The main job of [_textController] is give information on what content to display.
   /// It doesn't actually handle the changes made if you get what I mean.
   StreamController<String> _textController = StreamController<String>();
   Sink<String> get _inString => _textController.sink;
