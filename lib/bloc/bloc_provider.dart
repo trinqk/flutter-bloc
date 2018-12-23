@@ -32,6 +32,8 @@ class BlocProvider<T extends BlocBase> extends StatefulWidget {
 
   /// Method that searches up the widget tree for a [BlocProvider].
   /// It then returns the [bloc] of the [BlocProvider] that was found.
+  ///
+  /// Takes care of passing reference throughout the tree
   static T of<T extends BlocBase>(BuildContext context){
     final type = _typeOf<BlocProvider<T>>();
     BlocProvider<T> provider = context.ancestorWidgetOfExactType(type);

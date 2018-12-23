@@ -25,7 +25,7 @@ class StringPage extends StatelessWidget {
     /// This [TextField] will trigger a change anytime the value inside the [TextField] changes
     Widget _blocInput() {
       return TextField(
-        onChanged: (value) => _stringBloc.onChange.add(value),
+        onChanged: _stringBloc.onChange.add,
         decoration: InputDecoration(
           border: OutlineInputBorder(),
         ),
