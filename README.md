@@ -25,12 +25,23 @@ flutter run
 ## What is BLoC?  
 So... What is **BLoC** anyways? What's this all about?  
   
-**BLoC**, which is short for **B**usiness **Lo**gic **C**omponents, is a design pattern introduced by Google regarding the seperation of UI and Business Logic.  
-  
-> BLoC is like a refactoring guideline to increase code share coverage when developing applications for multiple environments.
-> 
-> [Suguru Inatomi](https://medium.com/lacolaco-blog/bloc-design-pattern-with-angular-1c2f0339f6a3)
+**BLoC**, which is short for **B**usiness **Lo**gic **C**omponents, is a design pattern introduced by Google regarding the seperation of UI and [Business Logic](https://en.wikipedia.org/wiki/Business_logic). A simple explanation would be that the UI only displays information, having no knowledge of how the information was obtained while a seperate "component" handles the business logic and feeds information to the UI.
 
-It was introduced during the DartConference 2018 by Paolo Soares, a Google Employee. I recommend you watch [this video](https://www.youtube.com/watch?v=PLHln7wHgPE&t=7s) to hear the full explanation of how the BLoC pattern should be implemented. It's an awesome talk (in my opinion) and he explains why the BLoC pattern was created. 
+It was introduced during the DartConference 2018 by Paolo Soares, a Google Employee. I recommend you watch [this video](https://www.youtube.com/watch?v=PLHln7wHgPE&t=7s) to hear the full explanation of how the BLoC pattern should be implemented. It's an awesome talk and he explains why the BLoC pattern was created. 
+
 ## BLoC in Flutter
 
+Poalo, the Googler who introduced the **BLoC** pattern, left us with a few guidelines to follow to properly incorperate it.
+
+>### BLoC Design Guidelines
+>1. Inputs and outputs are **simple Streams/Sinks only**
+>2. Dependencies must be **injectable** and **platform agnostic**
+>3. **No platform branching** allowed
+>4. Implementation can be whatever you want if you follow the previous rules.
+
+We'll be following these guidelines, so keep these in mind.
+
+### Streams
+### BLoC Provider
+
+###### ~Work in progress~
