@@ -44,4 +44,4 @@ We'll be following these guidelines, so keep these in mind.
 ### Streams
 ### BLoC Provider
 
-###### ~Work in progress~
+###### Work in progress
