@@ -7,7 +7,7 @@ class StringPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    /// Here we grab the [StringBloc] which is located at the top of our widget tree (main.dart)
+    /// Here we grab the [StringBloc] reference which is located at the top of our widget tree (main.dart)
     StringBloc _stringBloc = BlocProvider.of<StringBloc>(context);
 
     /// Listens to the [_stringBloc] using the outString[Stream], and display the data we receive with a [Text]
