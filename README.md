@@ -139,3 +139,5 @@ Check out [`string_bloc.dart`](https://github.com/trinqk/flutter-bloc/blob/maste
 Hopefully this helps you understand the **BLoC** pattern. If you have any questions at all regarding what I did or what you need to do, please check out the [source](https://github.com/trinqk/flutter-bloc/tree/master/lib), and read the comments. I tried to make this as short as I could and left out a lot of details. 
 
 Also please understand that there are many ways to implement the **BLoC** pattern. Good luck!
+
+###### WORK IN PROGRESS
