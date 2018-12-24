@@ -99,7 +99,8 @@ class  BlocProvider<T  extends  BlocBase>  extends  StatefulWidget {
 	BlocProvider({Key key, @required this.bloc, @required this.child,})
 		: super(key: key);
 	
-	...
+	final T bloc;
+	final Widget child;
 	
 	/// Takes care of passing bloc reference throughout the tree
 	/// 
